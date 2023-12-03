@@ -1,0 +1,33 @@
+<template>
+    <div>
+    <h2>Enter Name to Search Employee</h2>
+    <lightning-input 
+            type="text" 
+            id="input1"
+            value={employeeName} 
+            onchange={handleOnChangeEmployeeName}>
+    </lightning-input>
+     
+            <h2>Enter Email to Search Employee</h2>
+    <lightning-input 
+            type="email" 
+            id="input2"
+            value={employeeEmail} 
+            onchange={handleOnChangeEmployeeEmail}>
+    </lightning-input>
+     
+     
+            <lightning-button variant="brand"
+            label="Search Employee"
+            title="Click here to initiate the search"
+            onclick={initiateSearch}>
+    </lightning-button>
+     
+            <lightning-button variant="brand"
+            label="Clear Search"
+            title="Click here to Clear Seach Results"
+            onclick={clearSearch}>
+    </lightning-button>
+     
+        </div>
+    </template>
