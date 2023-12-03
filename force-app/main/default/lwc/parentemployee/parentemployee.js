@@ -17,6 +17,6 @@ export default class Parentemployee extends LightningElement {
             });
         }catch(e){
             console.log(e);
-        } //abcd
+        } 
     }
 }
